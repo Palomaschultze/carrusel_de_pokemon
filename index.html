@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemónes</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Pixelify+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+    <!-- JQUERY -->
+    <script defer src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script defer src="./assets/script.js"></script>
+    <!-- Slick JS -->
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+</head>
+
+
+<body id="fondo">
+
+    <!-- Header -->
+    <header>
+        <div class="container-fluid d-flex align-items-center bg-danger">
+            <div class="mx-auto my-4">
+                <img src="./assets/img/logo_pokemon.png" alt="" height="70">
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido de la página -->
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Columna izquierda -->
+                <div class="col-1 costado">
+                    <!-- Contenido de la columna izquierda -->
+                </div>
+
+                <!-- Contenedor principal -->
+                <div class="col-10 mt-4" id="contenedorPrincipal">
+                    <section class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+                        <!-- Título dinámico para mostrar el tipo de Pokémon -->
+                        <div class="tipo-pokemon-titulo text-center mt-4 order-md-1 mx-5" id="titulo">
+                            <h2>Pokémones de Tipo <span id="tipo-pokemon"></span></h2>
+                        </div>
+                        <!-- Dropdown del tipo de Pokémon -->
+                        <div class="dropdown order-md-2 mt-3 mx-5">
+                            <button class="btn btn-warning dropdown-toggle btn-sm" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Elige el tipo
+                            </button>
+                            <ul class="dropdown-menu" id="pokemonTypesDropdown">
+                                <!-- los tipos de Pokémon se llenan dinámicamente desde JavaScript -->
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- Carrusel -->
+                    <div class="container my-5 responsive text-center" id="pokemonCarousel">
+                        <!-- Contenido del carrusel se llenará dinámicamente desde JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Columna derecha -->
+                <div class="col-1 costado">
+                    <!-- Contenido de la columna derecha -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <br><br>
+        <hr>
+        <div class="container py-2 mx-auto">
+            <p class="small text-center"> Carrusel de Pokémon por Tipo. Paloma Schultze (2023)</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
